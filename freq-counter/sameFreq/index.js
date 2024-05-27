@@ -13,6 +13,8 @@
  */
 
 function sameFrequency(num1, num2) {
+  if (String(num1).length !== String(num2).length) return false;
+
   const digits1 = String(num1).split('');
   const digits2 = String(num2).split('');
 
