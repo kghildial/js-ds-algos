@@ -33,8 +33,10 @@ function findLongestSubstring(str) {
         end += 1;
         currentSubStrLen += 1;
       } else {
-        if (currentSubStrLen > longestSubStrLen)
+        if (currentSubStrLen > longestSubStrLen) {
           longestSubStrLen = currentSubStrLen;
+        }
+
         subStr = subStr.substring(1, subStr.length);
         start += 1;
         currentSubStrLen -= 1;
